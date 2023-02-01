@@ -1,8 +1,8 @@
-﻿// Практика. Задача 7
-Console.WriteLine("Введите 3х значное число: ");
+﻿// Практика. Задача 6
+Console.WriteLine("Введите число: ");
 int a = int.Parse(Console.ReadLine()!);
-if (99 < a & a < 1000)
+if (a%2==0)
 {
-    Console.WriteLine(a % 10);
+    Console.WriteLine("Четное");
 }
-else Console.WriteLine("Введите другое число");
+else Console.WriteLine("Нечетное");
