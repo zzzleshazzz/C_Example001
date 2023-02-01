@@ -1,8 +1,9 @@
-﻿// Практика. Задача 6
-Console.WriteLine("Введите число: ");
+﻿// Практика. Задача 8
+Console.Write("Введите число: ");
 int a = int.Parse(Console.ReadLine()!);
-if (a%2==0)
+int i = 1;
+while(i<=a)
 {
-    Console.WriteLine("Четное");
+    if (i%2==0) Console.Write($"{i} ");
+    i++;
 }
-else Console.WriteLine("Нечетное");
