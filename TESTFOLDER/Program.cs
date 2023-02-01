@@ -1,9 +1,21 @@
-﻿// Практика. Задача 8
-Console.Write("Введите число: ");
+﻿// Задача 13
+Console.Clear();
+Console.Write($"Введите число: ");
 int a = int.Parse(Console.ReadLine()!);
-int i = 1;
-while(i<=a)
+if (a < 100) Console.Write("Третьей цифры нет");
+else
 {
-    if (i%2==0) Console.Write($"{i} ");
-    i++;
+    while (a > 1000)
+    {
+        a = (int)(a / 10);
+    }
+    Console.WriteLine(a % 10);
 }
+
+
+// Задача 10
+// Console.Clear();
+// Console.Write($"Введите число: ");
+// int a = int.Parse(Console.ReadLine()!);
+
+// Console.Write(a%100/10);
