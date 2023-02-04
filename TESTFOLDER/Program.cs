@@ -1,21 +1,9 @@
-﻿// Задача 13
-Console.Clear();
-Console.Write($"Введите число: ");
-int a = int.Parse(Console.ReadLine()!);
-if (a < 100) Console.Write("Третьей цифры нет");
-else
+﻿Console.Write("Введите N: ");
+int n = int.Parse(Console.ReadLine()!);
+int i=1;
+while(i<=n)
 {
-    while (a > 1000)
-    {
-        a = (int)(a / 10);
-    }
-    Console.WriteLine(a % 10);
+    Console.Write($"{i*i}");
+    if(i<n) Console.Write(", ");
+    i++;
 }
-
-
-// Задача 10
-// Console.Clear();
-// Console.Write($"Введите число: ");
-// int a = int.Parse(Console.ReadLine()!);
-
-// Console.Write(a%100/10);
