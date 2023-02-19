@@ -7,14 +7,6 @@ int CountPositive(int[] mas)
     return result;
 }
 
-void PrintArray(int[] mas)
-{
-    for(int i = 0; i<mas.Length; i++)
-    {
-        Console.Write($"{mas[i]} ");
-    }
-}
-
 Console.Write("Введите числа через пробел:\n");
 int[] array = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();;
 Console.WriteLine($"Количество чисел > 0: {CountPositive(array)}");
